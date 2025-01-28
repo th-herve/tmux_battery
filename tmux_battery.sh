@@ -13,28 +13,28 @@ icon=""
 if [[ $status == "Charging" ]]; then
 	icon=#[fg=yellow]
 elif [[ $level -ge 95 ]]; then
- icon=󰁹
+ icon="#[fg=green]󰁹"
 
 elif [[ $level -ge 90 ]]; then
- icon=󰂁
+ icon="#[fg=green]󰂁"
 
 elif [[ $level -ge 80 ]]; then
- icon=󰂁
+ icon="#[fg=green]󰂁"
 
 elif [[ $level -ge 70 ]]; then
- icon=󰂀
+ icon="#[fg=green]󰂀"
 
 elif [[ $level -ge 60 ]]; then
- icon=󰁿
+ icon="#[fg=green]󰁿"
 
 elif [[ $level -ge 50 ]]; then
- icon=󰁾
+ icon="#[fg=green]󰁾"
  
 elif [[ $level -ge 40 ]]; then
- icon=󰁽
+ icon="#[fg=green]󰁽"
 
 elif [[ $level -ge 30 ]]; then
- icon=󰁼
+ icon="#[fg=green]󰁼"
 
 elif [[ $level -ge 20 ]]; then
  icon=#[fg=red]󰁻
@@ -43,5 +43,7 @@ else
  icon=#[fg=red]󰁺
 
 fi
+
+echo $icon" "#[fg=white]$level%
 
 echo $icon" "#[fg=white]$level%
