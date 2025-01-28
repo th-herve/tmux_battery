@@ -3,6 +3,7 @@
 # usage:
 # add it in one of tmux status option by referencing the file, example:
 # set-option -g status-right '#($HOME/.config/tmux_battery.sh)'
+# the terminal need to use a nerd font to use the icons
 
 level=$(cat /sys/class/power_supply/BAT1/capacity)
 status=$(cat /sys/class/power_supply/BAT1/status)
